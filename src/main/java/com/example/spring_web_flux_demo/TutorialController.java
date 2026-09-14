@@ -12,7 +12,7 @@ import reactor.core.publisher.Mono;
 public class TutorialController {
     @Autowired
     TutorialService tutorialService;
-
+  //Get all the tutorials
     @GetMapping("/tutorials")
     @ResponseStatus(HttpStatus.OK)
     public Flux<Tutorial> getAllTutorials(@RequestParam(required = false) String title) {
